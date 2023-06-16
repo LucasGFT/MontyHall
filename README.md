@@ -1,38 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Monty Hall
 
-## Getting Started
+Este projeto é uma implementação do paradoxo de Monty Hall usando Next.js, React, CSS e TypeScript.
 
-First, run the development server:
+## Descrição
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+O projeto Monty Hall tem como objetivo simular o famoso paradoxo de Monty Hall. O paradoxo envolve a escolha de uma entre três portas, sendo que atrás de uma delas há um presente e nas outras duas há uma cabra. Após a escolha inicial do jogador, uma das portas não escolhidas (que tem uma cabra) é aberta pelo apresentador. Em seguida, o jogador tem a opção de manter sua escolha inicial ou trocar para a outra porta restante. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+No projeto é possivel escolher quantas portas colocar e em qual porta está o presente.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Tecnologias Utilizadas
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Next.js
+- React
+- CSS
+- TypeScript
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Estrutura de Arquivos
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- src/ - Contém os arquivos principais do projeto.
+- src/components/ - Componentes reutilizáveis utilizados na implementação.
+- src/pages/ - Páginas do Next.js que definem as rotas e renderizam o conteúdo.
+- src/styles/ - Estilos css
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Executando o Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Certifique-se de ter o Node.js instalado em sua máquina.
+2. Clone este repositório.
+3. Abra o terminal na raiz do projeto.
+4. Execute o seguinte comando para instalar as dependências:
+``npm install``
+5. Para iniciar o projeto localmente, execute o comando:
+``npm run dev``
+6. Abra o seu navegador e acesse http://localhost:3000 para visualizar o projeto em execução.
