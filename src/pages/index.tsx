@@ -1,13 +1,38 @@
-import { Inter } from 'next/font/google'
-import Porta from '../../components/Porta'
+import Link from 'next/link'
+import Cartao from '../../components/Cartao'
+import styles from '../styles/Formulario.module.css'
+import EntradaNumerica from '../../components/EntradaNumerica'
+import { useState } from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
+export default function Formulario() {
 
-export default function Home() {
+  const [quantidadePortas, setQuantidadePortas] = useState(3)
+  const [comPresente, setComPresente] = useState(1)
+
   return (
-    <div style={{ display: 'flex' }}>
-      <Porta />
-      <Porta selecionada />
+    <div className={styles.formulario}>
+      <div>
+        <Cartao bgcolor="#c0392c">
+          <h1>Monty Hall</h1>
+        </Cartao>
+        <Cartao>
+          <EntradaNumerica text='Qtde Portas?' value={quantidadePortas} onChange={novaQtd => setQuantidadePortas(novaQtd)} />
+        </Cartao>
+      </div>
+      <div>
+        <Cartao>
+          <EntradaNumerica text='Porta com Presente?'
+            value={comPresente}
+            onChange={novaPortaComPresente => setComPresente(novaPortaComPresente)} />
+
+        </Cartao>
+
+        <Cartao bgcolor="#28a085">
+          <Link href={`/jogo/${quantidadePortas}/${comPresente}`} className={styles.link}>
+            <h2>Iniciar</h2>
+          </Link>
+        </Cartao>
+      </div>
     </div>
   )
 }
