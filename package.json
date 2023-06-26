@@ -2,10 +2,12 @@
   "name": "portas",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lucasgft.github.io/MontyHall/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "deploy": "next build && next export && npx gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {
@@ -14,6 +16,7 @@
     "@types/react-dom": "18.2.5",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
+    "gh-pages": "^5.0.0",
     "next": "13.4.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
