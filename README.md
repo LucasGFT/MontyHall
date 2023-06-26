@@ -8,6 +8,10 @@ O projeto Monty Hall tem como objetivo simular o famoso paradoxo de Monty Hall. 
 
 No projeto é possivel escolher quantas portas colocar e em qual porta está o presente.
 
+## Link do Projeto
+
+https://monty-hall-lucasgft.vercel.app/
+
 ## Tecnologias Utilizadas
 
 - Next.js
@@ -21,7 +25,6 @@ No projeto é possivel escolher quantas portas colocar e em qual porta está o p
 - src/components/ - Componentes reutilizáveis utilizados na implementação.
 - src/pages/ - Páginas do Next.js que definem as rotas e renderizam o conteúdo.
 - src/styles/ - Estilos css
-
 
 ## Executando o Projeto
 
